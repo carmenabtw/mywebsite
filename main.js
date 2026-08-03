@@ -7,7 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchBtn = document.querySelector('.search-box button');
     const cards = document.querySelectorAll('.card');
     const newsItems = document.querySelectorAll('.news-item');
-
+// Adres çubuğundaki index.html ve partners.html yazılarını temizler
+(function cleanURL() {
+    let path = window.location.pathname;
+    
+    if (path.endsWith('index.html') || path.endsWith('partners.html')) {
+        // Dosya uzantısını temizle, varsa #home gibi anchor kısmını koru
+        let newPath = path.replace(/(index|partners)\.html$/, '');
+        window.history.replaceState(null, '', newPath + window.location.hash);
+    }
+})();
     function filterContent() {
         const searchTerm = searchInput.value.toLowerCase().trim();
 
