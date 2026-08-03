@@ -1,230 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Your Project</title>
-
-    <meta name="description" content="Modern Download Center">
-    <meta name="theme-color" content="#0b1020">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <title>Silkroad Online - Bilgi & Rehber Portalı</title>
+    <!-- CSS Dosyası Bağlantısı -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Rajdhani & Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Background -->
-    <div class="background">
-        <div class="blur blur1"></div>
-        <div class="blur blur2"></div>
-        <div class="grid"></div>
-    </div>
-
-    <!-- Navbar -->
-
-    <header>
-
-        <div class="logo">
-            <i class="fa-solid fa-cube"></i>
-            <span>YourProject</span>
+    <!-- Header / Navigasyon -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">SILKROAD<span>HUB</span></a>
+            <nav class="nav-links">
+                <a href="#home" class="active">Ana Sayfa</a>
+                <a href="#builds">Build & Rehberler</a>
+                <a href="#alchemy">Simya (Alchemy)</a>
+                <a href="#quests">Görevler</a>
+                <a href="#trade">Kervan & Ticaret</a>
+                <a href="#news">Haberler</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Rehber veya item ara...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </div>
-
-        <nav>
-
-            <a href="#features">Features</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#download">Download</a>
-            <a href="#faq">FAQ</a>
-
-        </nav>
-
     </header>
 
-    <!-- Hero -->
-
-    <section class="hero">
-
+    <!-- Hero / Karşılama Alanı -->
+    <section id="home" class="hero">
         <div class="hero-content">
-
-            <span class="badge">
-                Version 1.0
-            </span>
-
-            <h1>
-                Modern Download Center
-            </h1>
-
-            <p>
-
-                Fast, secure and beautiful landing page for your software,
-                game server or open source project.
-
-            </p>
-
+            <h1>Silkroad Online Bilgi Bankası</h1>
+            <p>En güncel Karakter Build'leri, Simya Rehberleri, Uniques saatleri ve İtem veritabanı.</p>
             <div class="hero-buttons">
-
-                <a href="#download" class="btn primary">
-                    <i class="fa-solid fa-download"></i>
-                    Download
-                </a>
-
-                <a href="#features" class="btn secondary">
-                    Learn More
-                </a>
-
+                <a href="#builds" class="btn btn-primary">Build Rehberleri</a>
+                <a href="#alchemy" class="btn btn-secondary">Simya Hesabı</a>
             </div>
-
         </div>
-
     </section>
 
-    <!-- Features -->
+    <!-- Hızlı Erişim / Kategori Kartları -->
+    <main class="container main-content">
+        
+        <section id="builds" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-shield-halved"></i> Popüler Karakter Build'leri</h2>
+            <div class="grid grid-3">
+                <!-- Kart 1: CH Build -->
+                <div class="card">
+                    <div class="card-badge ch">CH</div>
+                    <h3>Bicheon / Fire / Light (Spear & Glavie)</h3>
+                    <p>Çin ırkı için en yüksek canlılık ve alan hasarına sahip pure STR/INT yapılandırmaları.</p>
+                    <a href="#" class="card-link">Rehberi Oku &rarr;</a>
+                </div>
 
-    <section id="features" class="features">
+                <!-- Kart 2: EU Build -->
+                <div class="card">
+                    <div class="card-badge eu">EU</div>
+                    <h3>Warrior / Cleric (Full STR)</h3>
+                    <p>Partilerin vazgeçilmezi, yüksek defans ve buff desteği sağlayan tank yapılandırması.</p>
+                    <a href="#" class="card-link">Rehberi Oku &rarr;</a>
+                </div>
 
-        <h2>Features</h2>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <i class="fa-solid fa-bolt"></i>
-
-                <h3>Fast</h3>
-
-                <p>
-                    Optimized for speed and performance.
-                </p>
-
+                <!-- Kart 3: EU Build -->
+                <div class="card">
+                    <div class="card-badge eu">EU</div>
+                    <h3>Wizard / Bard (Full INT)</h3>
+                    <p>Maksimum alan hasarı (PvE) ve hızlı seviye atlama rehberi.</p>
+                    <a href="#" class="card-link">Rehberi Oku &rarr;</a>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-
-                <i class="fa-solid fa-shield-halved"></i>
-
-                <h3>Secure</h3>
-
-                <p>
-
-                    Built with modern standards.
-
-                </p>
-
+        <!-- Haberler ve Güncellemeler -->
+        <section id="news" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-newspaper"></i> Son Haberler & Güncellemeler</h2>
+            <div class="grid grid-2">
+                <article class="news-item">
+                    <span class="news-date">03 Ağustos 2026</span>
+                    <h3>Cap 140 Denge Güncellemeleri Açıklandı</h3>
+                    <p>Yeni güncelleme ile birlikte Avrupa ve Çin ırkları arasındaki beceri dengeleri yeniden düzenlendi.</p>
+                </article>
+                <article class="news-item">
+                    <span class="news-date">01 Ağustos 2026</span>
+                    <h3>Haftalık Unique Etkinliği & Sıralamalar</h3>
+                    <p>Bu haftaki Unique avcıları sıralaması ve ödül dağıtımları güncellendi.</p>
+                </article>
             </div>
+        </section>
 
-            <div class="card">
-
-                <i class="fa-solid fa-mobile-screen"></i>
-
-                <h3>Responsive</h3>
-
-                <p>
-
-                    Looks great on every device.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Gallery -->
-
-    <section id="gallery" class="gallery">
-
-        <h2>Gallery</h2>
-
-        <div class="images">
-
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-
-        </div>
-
-    </section>
-
-    <!-- Download -->
-
-    <section id="download" class="download">
-
-        <h2>Download</h2>
-
-        <p>
-
-            Download the latest release.
-
-        </p>
-
-        <a href="downloads/program.zip" class="download-btn">
-
-            <i class="fa-solid fa-download"></i>
-
-            Download Now
-
-        </a>
-
-    </section>
-
-    <!-- FAQ -->
-
-    <section id="faq" class="faq">
-
-        <h2>Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-
-            <h3>Is it free?</h3>
-
-            <p>
-
-                Yes.
-
-            </p>
-
-        </div>
-
-        <div class="faq-item">
-
-            <h3>How do I install?</h3>
-
-            <p>
-
-                Download the archive and follow the included instructions.
-
-            </p>
-
-        </div>
-
-    </section>
+    </main>
 
     <!-- Footer -->
-
-    <footer>
-
-        <p>
-
-            © 2026 YourProject
-
-        </p>
-
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 SilkroadHub. Tüm hakları saklıdır. Silkroad Online, Joymax Co., Ltd. tescilli markasıdır.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
-
+    <!-- JavaScript Dosyası -->
+    <script src="main.js"></script>
 </body>
-
 </html>
