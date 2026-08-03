@@ -61,3 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log("Silkroad Online portal JS başarıyla yüklendi!");
 });
+document.querySelectorAll('.nav-links a[data-scroll]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // # işaretinin adrese eklenmesini engeller
+
+        const targetId = this.getAttribute('data-scroll');
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
