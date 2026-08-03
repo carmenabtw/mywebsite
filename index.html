@@ -19,14 +19,11 @@
             <a href="#" class="logo">CARMENA<span>BTW</span></a>
             <nav class="nav-links">
                 <a href="#home" class="active">Ana Sayfa</a>
-                <a href="#builds">Build & Rehberler</a>
-                <a href="#alchemy">Simya (Alchemy)</a>
-                <a href="#quests">Görevler</a>
-                <a href="#trade">Kervan & Ticaret</a>
+                <a href="#downloads">İndirmeler</a>
                 <a href="#news">Haberler</a>
             </nav>
             <div class="search-box">
-                <input type="text" placeholder="Rehber veya item ara...">
+                <input type="text" placeholder="Dosya veya haber ara...">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
@@ -35,60 +32,59 @@
     <!-- Hero / Karşılama Alanı -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Silkroad Online Bilgi Bankası</h1>
-            <p>En güncel Karakter Build'leri, Simya Rehberleri, Uniques saatleri ve İtem veritabanı.</p>
+            <h1>Silkroad Online Bilgi & İndirme Portalı</h1>
+            <p>En güncel Silkroad dosyaları, patch'ler, rehber paketleri ve duyurular.</p>
             <div class="hero-buttons">
-                <a href="#builds" class="btn btn-primary">Build Rehberleri</a>
-                <a href="#alchemy" class="btn btn-secondary">Simya Hesabı</a>
+                <!-- Tıklayınca doğrudan İndirmeler bölümüne akar -->
+                <a href="#downloads" class="btn btn-primary"><i class="fa-solid fa-download"></i> Dosyaları İndir</a>
+                <a href="#news" class="btn btn-secondary"><i class="fa-solid fa-newspaper"></i> Haberler</a>
             </div>
         </div>
     </section>
 
-    <!-- Hızlı Erişim / Kategori Kartları -->
+    <!-- Ana İçerik Alanı -->
     <main class="container main-content">
         
-        <section id="builds" class="section">
-            <h2 class="section-title"><i class="fa-solid fa-shield-halved"></i> Popüler Karakter Build'leri</h2>
-            <div class="grid grid-3">
-                <!-- Kart 1: CH Build -->
+        <!-- İNDİRMELER BÖLÜMÜ -->
+        <section id="downloads" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-download"></i> Dosya & Araç İndirmeleri</h2>
+            <div class="grid grid-2">
+                
+                <!-- 1. İndirme Kartı (GitHub'daki ZIP dosyan için) -->
                 <div class="card">
-                    <div class="card-badge ch">CH</div>
-                    <h3>Bicheon / Fire / Light (Spear & Glavie)</h3>
-                    <p>Çin ırkı için en yüksek canlılık ve alan hasarına sahip pure STR/INT yapılandırmaları.</p>
-                    <a href="#" class="card-link">Rehberi Oku &rarr;</a>
+                    <h3><i class="fa-solid fa-file-zipper"></i> SRO Rehber & Arşiv Paketi</h3>
+                    <p>Tüm gerekli rehberleri ve ek materyalleri içeren ZIP arşiv dosyası.</p>
+                    <!-- "dosya-adi.zip" yerine GitHub'a yüklediğin zip dosyasının adını yaz -->
+                    <a href="./CALManydesk.zip" download class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> İndir (.ZIP)
+                    </a>
                 </div>
 
-                <!-- Kart 2: EU Build -->
+                <!-- 2. İndirme Kartı (Alternatif / Harici Bağlantı Örneği) -->
                 <div class="card">
-                    <div class="card-badge eu">EU</div>
-                    <h3>Warrior / Cleric (Full STR)</h3>
-                    <p>Partilerin vazgeçilmezi, yüksek defans ve buff desteği sağlayan tank yapılandırması.</p>
-                    <a href="#" class="card-link">Rehberi Oku &rarr;</a>
+                    <h3><i class="fa-solid fa-cloud-arrow-down"></i> SRO Full Client / Patch</h3>
+                    <p>En güncel oyun yaması ve ek dosyaları içeren indirme bağlantısı.</p>
+                    <a href="https://mega.nz" target="_blank" class="btn btn-secondary">
+                        Mega / Harici İndir &rarr;
+                    </a>
                 </div>
 
-                <!-- Kart 3: EU Build -->
-                <div class="card">
-                    <div class="card-badge eu">EU</div>
-                    <h3>Wizard / Bard (Full INT)</h3>
-                    <p>Maksimum alan hasarı (PvE) ve hızlı seviye atlama rehberi.</p>
-                    <a href="#" class="card-link">Rehberi Oku &rarr;</a>
-                </div>
             </div>
         </section>
 
-        <!-- Haberler ve Güncellemeler -->
+        <!-- HABERLER BÖLÜMÜ -->
         <section id="news" class="section">
-            <h2 class="section-title"><i class="fa-solid fa-newspaper"></i> Son Haberler & Güncellemeler</h2>
+            <h2 class="section-title"><i class="fa-solid fa-newspaper"></i> Son Haberler & Duyurular</h2>
             <div class="grid grid-2">
                 <article class="news-item">
                     <span class="news-date">03 Ağustos 2026</span>
-                    <h3>Cap 140 Denge Güncellemeleri Açıklandı</h3>
-                    <p>Yeni güncelleme ile birlikte Avrupa ve Çin ırkları arasındaki beceri dengeleri yeniden düzenlendi.</p>
+                    <h3>Yeni Dosya Güncellemesi Yayınlandı</h3>
+                    <p>Arşiv içerisindeki rehberler ve araçlar en son sürüme güncellendi. İndirmeler bölümünden erişebilirsiniz.</p>
                 </article>
                 <article class="news-item">
                     <span class="news-date">01 Ağustos 2026</span>
-                    <h3>Haftalık Unique Etkinliği & Sıralamalar</h3>
-                    <p>Bu haftaki Unique avcıları sıralaması ve ödül dağıtımları güncellendi.</p>
+                    <h3>Portal Portföyü Açıldı</h3>
+                    <p>Sitemiz üzerinden en güncel duyuruları ve dosya paylaşımlarını takip edebilirsiniz.</p>
                 </article>
             </div>
         </section>
@@ -106,25 +102,8 @@
             </div>
         </div>
     </footer>
-<footer class="footer">
-    </footer>
+
+    <!-- JavaScript Dosyası Bağlantısı -->
     <script src="./main.js"></script>
 </body>
 </html>
-    <!-- JavaScript Dosyası (GitHub'a main.js yüklediğinde aktif edebilirsin) -->
-    <!-- <script src="./main.js"></script> -->
-</body>
-</html>
-<!-- İndirme Alanı -->
-<section id="downloads" class="section">
-    <h2 class="section-title"><i class="fa-solid fa-download"></i> Dosya & Araç İndirmeleri</h2>
-    <div class="grid grid-2">
-        
-        <div class="card">
-            <h3><i class="fa-solid fa-file-zipper"></i> SRO Full Rehber Paketi</h3>
-            <p>CALM special anydesk.</p>
-            <a href="./CALManydesk.zip" download class="btn btn-primary">İndir (ZIP)</a>
-        </div>
-
-    </div>
-</section>
